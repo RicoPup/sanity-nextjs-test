@@ -14,16 +14,16 @@ export default async function IndexPage() {
   const data = await getData() as Post[]
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
-      <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+      <div className="space-y-2 pt-6 pb-8 md:space-y-5 divide-y divide-gray-200 dark:divide-gray-700">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl">
           All Posts
         </h1>
-        <ul>
+        <ul className="divide-y divide-gray-200 pb-7 dark:divide-gray-700 xl:divide-y-0">
           {data.map((post) => (
             <li key={post._id} className="py-4">
               <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                 <div>
-                  <p className="text-base font-medium leading-6 text-teal-500">
+                  <p className="text-base font-medium leading-6 text-red-500">
                     {new Date(post._createdAt).toISOString().split('T')[0]}
                   </p>
                 </div>

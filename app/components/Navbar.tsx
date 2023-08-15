@@ -8,7 +8,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center w-full">
                     <Link href="/">
                         <h1 className="text-2xl font-medium">
-                            Rico's <span className="text-teal-500">Sanity</span> Test
+                            Rico's <span className="text-red-500">Sanity</span> Test
                         </h1>
                     </Link>
                     <ThemeButton />
